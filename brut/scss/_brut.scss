@@ -1,0 +1,104 @@
+body{
+	background-color:#ccc;
+}
+ul{
+	list-style-type:none;
+	padding:0;
+}
+
+// nav
+nav{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+
+
+	.logo{
+		flex:0 0 20%;
+		max-width: 10em;
+		img{
+			display: block;
+			max-width: 100%;
+		}
+	}
+
+	.fa-bars{}
+	
+	.nav{
+		flex: 0 0 100%;
+	}
+}
+
+
+//footer
+
+.retailers{
+	padding:1em;
+	background-image: url(../assets/background_colourband_bar.png);
+	background-size:100% 100%;
+
+	h1{
+		color:white;
+	}
+	ul{
+		// border:1px red solid;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+	li{
+		// border:1px blue solid;
+		margin:0.5em;
+		flex:1 0 40%;
+		
+	}
+
+	a{
+		display: block;
+
+	}
+	img{
+		// margin:auto;
+		display: block;
+		max-width: 100%;
+		// margin:auto;
+	}
+}
+
+
+@media only screen and (min-width: 40em){
+
+	.retailers{
+
+		li{
+		
+			flex:1 0 30%;
+			
+		}
+	}
+ 
+}
+
+
+
+@media only screen and (min-width: 70em){
+
+	.retailers{
+
+		ul{
+		
+			flex-wrap:nowrap;
+			
+
+		}
+
+		li{
+		
+			flex:1 1 auto;
+			
+		}
+	}
+ 
+}
