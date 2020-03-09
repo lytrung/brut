@@ -448,6 +448,10 @@ ul {
   padding: 0;
 }
 
+.wrap {
+  position: relative;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +461,17 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px green solid;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1em;
 }
 
 nav .logo {
@@ -476,6 +490,16 @@ nav .nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  display: none;
+  margin-top: 1em;
+}
+
+nav .nav-link {
+  color: white;
+  text-decoration: none;
+  line-height: 2em;
+  text-align: center;
+  display: block;
 }
 
 nav .social-media {
@@ -485,11 +509,40 @@ nav .social-media {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
+}
+
+nav.expanded {
+  position: fixed;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav.expanded .nav {
+  display: block;
+}
+
+nav.expanded .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-media a {
+  display: block;
+  margin: 0 0.25em;
+}
+
+.social-media a img {
+  display: block;
 }
 
 .hero-wrap {
   border: 1px red solid;
   min-height: 100vh;
+  background-image: url(../assets/stock1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .retailers {
