@@ -110,6 +110,22 @@ nav{
 	background-color:#E5E6E6;
 }
 
+.products{
+	padding: 5em 1em 1em 1em;
+	border: thin red solid;
+}
+
+.product{
+	background-image: linear-gradient(to bottom right, #DCDCDC, #989EA3);
+	padding:1em;
+	&>img{
+		width: auto;
+		max-width: 100%;
+		max-height: 60vh;
+		margin:auto;
+		display: block;
+	}
+}
 //footer
 .retailers{
 	padding:1em;
