@@ -1,7 +1,8 @@
 
 body{
+	line-height: 1.6;
 	background-color:white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat' ,'Roboto', sans-serif;
 }
 ul{
 	list-style-type:none;
@@ -38,7 +39,7 @@ a>img{
 }
 
 p,a{
-	font-size: 0.9em;
+	font-size: 0.9rem;
 }
 // nav
 nav{
@@ -48,6 +49,7 @@ nav{
 	top:0;
 	left:0;
 	padding:1em 0;
+
 	>div{
 		display: flex;
 		flex-wrap:wrap;
@@ -63,20 +65,27 @@ nav{
 
 	.logo{
 		flex:0 0 20%;
-		max-width: 10em;
+		max-width: 8em;
+		// position: relative;
+		// z-index: 100;
 		img{
 			display: block;
 			max-width: 100%;
 		}
 	}
 
-	.fa-bars{
+	.nav-control,.fa-bars{
 		font-size: 1.5rem;
+		// position: relative;
+		// z-index: 100;
 	}
 	
-	.nav{
+	.nav-container{
 		flex: 0 0 100%;
-		display: none;
+	}
+	.nav{
+		
+		// display: none;
 		margin-top:1em;
 		
 	}
@@ -90,18 +99,27 @@ nav{
 		font-size: 1.2rem;
 	}
 
-	&.expanded{
-		position: fixed;
-		height: 100vh;
-		background-color:rgba($color: #000000, $alpha: 0.7);
-		.nav{
-			display: block;
-		}
-		.social-media{
-			display: flex;
-		}
+	
+}
 
+.nav2{
+	position: fixed;
+	background-color:white;
+	position: fixed;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	z-index: 50;
+	padding: 0.5em 0;
+	transition: transform ease 0.5s;
+	transform: translateY(-110%);
+	.logo{
+		max-width: 5em;
 	}
+
+	&.sticky{
+		
+		transform: translateY(0);
+	}
+
 }
 
 
@@ -141,23 +159,23 @@ nav{
 
 
 }
-.article{
-	>div{
-		padding:3em 0;
-		width:90%;
-		margin:auto;
-		.product-placement{
-			display:grid;
-			grid-template-columns: auto;
-			row-gap: 1em;;
-		}
-	}
-}
+
 
 
 //intro
 .blog{
 	background-color:#E5E6E6;
+
+	.section-intro{
+		background-color: white;
+		p{
+			// width: 90%;
+			// max-width: 80rem;
+			margin: 0 4vw;
+			padding:1em 0;
+			font-size: 1.2rem;
+		}
+	}
 }
 
 .products{
@@ -173,7 +191,8 @@ nav{
 	}
 }
 	.product{
-		background-image: linear-gradient(to bottom left, #DCDCDC, #989EA3);
+		// background-image: linear-gradient(to bottom left, #DCDCDC, #989EA3);
+		background-image: linear-gradient(to bottom left, #eee, #aaa);
 		display: flex;
 		padding: 1em 1em 1em 0;
 		&>div:first-child{
@@ -222,8 +241,31 @@ nav{
 	}	
 
 
+	//blog page
 
-
+	.article{
+		>div{
+			padding:3em 0;
+			width:90%;
+			margin:auto;
+			.article-main{
+				h2{
+					margin:2rem 0;
+				}
+			}
+	
+			.section-intro{
+				font-size: 1.2rem;
+				margin:2rem 0;
+				
+			}
+			.product-placement{
+				display:grid;
+				grid-template-columns: auto;
+				row-gap: 1em;;
+			}
+		}
+	}
 
 
 
@@ -240,7 +282,7 @@ nav{
 	}
 
 
-	h2{
+	.section-intro{
 		color:white;
 		font-size: 1.2rem;
 	}
@@ -279,7 +321,7 @@ nav{
 	}
 	.logo{
 		flex: 0 0 10em;
-		margin-bottom: 1em;;
+		margin-bottom: 1em;
 		img{
 			display: block;
 			max-width: 100%;
@@ -322,7 +364,7 @@ nav{
 	}
 
 	&>div:last-child{
-		height:80vw;
+		height:60vw;
 		background-image: url(../assets/stock1.jpg);
 		background-size: cover;
 		background-position: center;
@@ -339,6 +381,8 @@ nav{
 	text-align: right;
 	font-size: 1rem;
 }
+
+
 
 @media only screen and (min-width: 40em){
 
@@ -447,14 +491,59 @@ nav{
 	}
 }
 
+@media only screen and (max-width: 55em){
+	nav{
+		.nav-container{
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background-color:rgba($color: #000000, $alpha: 0.7);
+			top:0;
+			left:0;
+			z-index: 90;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			pointer-events: none;
+			opacity: 0;
+			transition: opacity ease 0.5s;
 
+		}
+		.nav{
+			flex: 0 0 100%;
+		}
+	}
+	.expanded{
+		.nav-control{
+			// color: white;
+		}
+		.nav-container{
+			opacity: 1;
+			pointer-events: auto;
+
+		}
+	}
+	.nav2{
+		.nav-container{
+			display: none;
+		}
+	}
+
+
+}
 @media only screen and (min-width: 55em){
 	nav{
+
+		.nav-container{
+			display: flex;
+			flex: 1 0 auto;
+		}
 		.nav{
-			display: block;
+			// display: block;
 			flex: 0 0 auto;
 			display: flex;
 		}
+		
 
 		.nav-link{
 			color:black;
@@ -564,6 +653,11 @@ nav{
 	}
 
 	.blog{
+		.section-intro{
+			h2{
+				margin: 0 2vw;
+			}
+		}
 		>div{
 			display: flex;
 			flex-wrap:wrap;
@@ -641,8 +735,11 @@ nav{
 				flex: 1 0 50%;
 				margin-right: 2em;
 			}
-			.product-placement{
+			.product-placement-container{
 				flex: 0 0 30%;
+			}
+			.product-placement{
+				
 				grid-template-columns: auto;
 
 				.product:last-child{
