@@ -130,6 +130,9 @@ nav{
 			>img{
 				max-width: 100%;
 				display: block;
+				width: auto;
+				max-height: 20em;
+				margin:auto;
 			}
 		}
 
@@ -151,7 +154,9 @@ nav{
 			font-size: 0.9em;
 			width:100%;
 			margin:1em 0;
-			
+		}
+		.action-link, .action-link:hover{
+			text-align: left;
 		}
 	}
 	
@@ -298,14 +303,16 @@ nav{
 				// justify-content: space-between;
 			
 			}
+
+
 		}
 
-		// .product:nth-child(8){
-		// 	grid-column-end: span 2;
-		// }
-		// .product:nth-child(9){
-		// 	grid-column-end: span 2;
-		// }
+		.product:nth-child(8){
+			grid-column-end: span 2;
+		}
+		.product:nth-child(9){
+			grid-column-end: span 2;
+		}
 	}
 
 

@@ -595,6 +595,9 @@ nav.expanded .social-media {
 .products .product > div:first-child > img {
   max-width: 100%;
   display: block;
+  width: auto;
+  max-height: 20em;
+  margin: auto;
 }
 
 .products .product > div:last-child {
@@ -622,6 +625,10 @@ nav.expanded .social-media {
   font-size: 0.9em;
   width: 100%;
   margin: 1em 0;
+}
+
+.products .product .action-link, .products .product .action-link:hover {
+  text-align: left;
 }
 
 .products .products-intro {
@@ -766,6 +773,14 @@ nav.expanded .social-media {
         grid-template-columns: auto auto;
   }
   .products .products-intro {
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+  }
+  .products .product:nth-child(8) {
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+  }
+  .products .product:nth-child(9) {
     -ms-grid-column-span: 2;
         grid-column-end: span 2;
   }
