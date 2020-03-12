@@ -471,20 +471,20 @@ nav{
 			grid-template-columns: auto auto auto auto;
 		}
 		.products-intro{
-			// grid-column-end: span 2;
+			grid-column-end: span 2;
 			// grid-row-end: span 2;
 		}
 
-		// .product:nth-child(2),.product:nth-child(2),.product:nth-child(3),.product:nth-child(4),.product:nth-child(5),.product:nth-child(10),.product:nth-child(11){
+		.product:nth-child(2),.product:nth-child(2),.product:nth-child(3),.product:nth-child(4),.product:nth-child(5),.product:nth-child(10),.product:nth-child(11){
 
-		// 	grid-row-end: span 2;
-		// }
-		// .product:nth-child(6),.product:nth-child(7){
-		// 	// grid-column-end: span 2;
-		// }
-		// .product:nth-child(9){
-		// 	grid-row-end: span 2;
-		// }
+			// grid-row-end: span 2;
+		}
+		.product:nth-child(6),.product:nth-child(7){
+			// grid-column-end: span 2;
+		}
+		.product:nth-child(9){
+			grid-row-end: span 2;
+		}
 	}
 
 

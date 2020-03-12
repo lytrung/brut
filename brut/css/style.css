@@ -930,5 +930,13 @@ nav.expanded .social-media {
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
   }
+  .products .products-intro {
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+  }
+  .products .product:nth-child(9) {
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
