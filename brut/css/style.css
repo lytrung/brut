@@ -439,9 +439,8 @@ main {
 }
 
 body {
-  line-height: 1.6;
   background-color: white;
-  font-family: 'Montserrat' ,'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
