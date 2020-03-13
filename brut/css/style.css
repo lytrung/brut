@@ -551,6 +551,20 @@ nav .nav-link {
           transform: translateY(0);
 }
 
+.intro-video {
+  position: relative;
+}
+
+.intro-video .intro-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+}
+
 .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
