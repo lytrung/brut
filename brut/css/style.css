@@ -1295,6 +1295,9 @@ nav .nav-link {
   nav .main li {
     padding: 0 1em;
   }
+  .nav2 {
+    padding: 0;
+  }
   .intro, .product-range, .blog-item {
     display: -webkit-box;
     display: -ms-flexbox;
