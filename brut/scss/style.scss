@@ -17,14 +17,14 @@
 
 @import "../../scss/root";
 @import "../../scss/reboot";
-@import "brut";
+
 // @import "type";
 // @import "images";
 // @import "containers";
 // @import "grid";
 // @import "tables";
 // @import "forms";
-// @import "buttons";
+// @import "../../scss/buttons";
 // @import "transitions";
 // @import "dropdown";
 // @import "button-group";
@@ -37,9 +37,9 @@
 // @import "alert";
 // @import "progress";
 // @import "list-group";
-// @import "close";
+//@import "../../scss/close";
 // @import "toasts";
-// @import "modal";
+@import "../../scss/modal";
 // @import "tooltip";
 // @import "popover";
 // @import "carousel";
@@ -54,3 +54,5 @@
 // // Utilities
 
 // @import "utilities/api";
+
+@import "brut";
