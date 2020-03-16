@@ -7,7 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>Brut</title>
@@ -80,7 +81,23 @@
 				</div>
 			</div>
 		</nav>
-		<section class="blog-hero-wrap"></section>
+		<section class="blog-hero-wrap product-shots">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image: url(assets/product_shot1.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(assets/product_shot2.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(assets/product_shot3.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(assets/product_shot4.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(assets/product_shot5.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(assets/product_shot6.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(assets/product_shot7.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(assets/product_shot8.jpg);"></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			
+			</div>
+		</section>
     	<section class="products">
 			<div>
 				<div class="product">
@@ -215,7 +232,7 @@
     	<footer>
     		<div class="retailers">
                 <div>
-					<div class="section-intro">Buy Brut online from any one of your favourite retailers</div>  
+					<div class="section-intro">Buy Brut online from any one of your favourite retailers below:</div>  
 					<ul>
 						<li><a href=""><img src="assets/store_countdown.png" alt=""></a></li>
 						<li><a href=""><img src="assets/store_newworld.png" alt=""></a></li>
@@ -257,6 +274,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
