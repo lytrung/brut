@@ -9,7 +9,7 @@ $(function(){
 
 
     //sticky menu----------------
-	var menuOffset = $(window).height();
+	var menuOffset = $(window).height() - 300;
 
 	$(document).on('scroll',function(){
 
@@ -33,19 +33,41 @@ $(function(){
 	});
 	
 	// swiper
-	  var swiper = new Swiper('.swiper-container', {
-		  slidesPerView: 1,
-		  spaceBetween: 10,
-		  speed: 700,
-		  loop: true,
-		  autoplay: {
-			  delay: 4000,
-			  disableOnInteraction: false,
-		  },
-		  pagination: {
-			  el: '.swiper-pagination',
-			  clickable: true,
-		  },
-	  });
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		speed: 1000,
+		loop: true,
+		preloadImages:true,
+		effect:'fade',
+		fadeEffect: {
+		  crossFade: true
+		},
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+
+	//video
+
+	var videoPlayer = document.querySelector('.avModal-content');
+
+	$('#avModal').on('shown.bs.modal', function () {
+		// Auto play, half volume.
+		videoPlayer.play()
+		videoPlayer.volume = 0.5;
+	})
+	$('#avModal').on('hide.bs.modal', function () {
+		// Auto play, half volume.
+		videoPlayer.pause();
+        // videoPlayer.firstChild.nodeValue = 'Play';
+	})
+
+    
 
 });
