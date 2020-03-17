@@ -1275,6 +1275,8 @@ nav .nav-link {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
