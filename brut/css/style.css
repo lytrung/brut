@@ -707,7 +707,8 @@ a > img {
   position: relative;
 }
 
-h2 {
+h1, h2 {
+  font-size: calc(1.325rem + 0.9vw);
   line-height: 1.5;
 }
 
@@ -1027,7 +1028,7 @@ nav .nav-link {
   margin: auto;
 }
 
-.article > div .article-main h2 {
+.article > div .article-main h2, .article > div .article-main h1 {
   margin: 2rem 0;
 }
 

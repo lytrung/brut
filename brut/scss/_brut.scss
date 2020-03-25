@@ -37,7 +37,8 @@ a>img{
 	// 	}
 	// }
 }
-h2{
+h1,h2{
+	font-size: calc(1.325rem + 0.9vw);
 	line-height: 1.5;
 }
 
@@ -332,7 +333,7 @@ nav{
 		width:90%;
 		margin:auto;
 		.article-main{
-			h2{
+			h2,h1{
 				margin:2rem 0;
 			}
 			a{
